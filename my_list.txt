@@ -1,5 +1,0 @@
-"Love Will Tear Us Apart"
-"Bela Lugosi's Dead"
-"A Forest"
-"Nine While Nine"
-"Girlfriend In a Coma"
