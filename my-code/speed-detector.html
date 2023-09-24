@@ -7,28 +7,30 @@
 </head>
 <body>
     <script>
-let speed= prompt('Please enter the car speed');
-  let speedLimit = 70;
-  let kmPerDemeritPoints = 5;
-  let excessSpeed = speed -speedLimit 
-  let demeritPoints = math.floor(excessSpeed/kmPerDemeritPoints)
- 
-  if  (speed <= 70){
-      alert("OK");
-    
-    }else ( speed >= 71){
-      alert("demeritPoints ");
-      
-   }
-   
-    if (demeritPoints >= 12) {
-      alert("License suspended");
-     
-   }
-   
-   else {
-      alert("invalid input") 
+const speed= prompt('Please enter the car speed');
+function calculateDemeritPoints(speed) { //create a function that takes the car's speed limit as input
+    const speedLimit = 70; //declares the legal fixed speed limit using const
+    const kmPerDemeritPoints = 5; //for every 5km/s above speed limit one demerit point is given
+
+    if (speed <= speedLimit) { 
+        alert("Ok");
+      console.log("Ok"); //returns OK if the speed limit is equal to 70km/s or less
+    } else {
+      const excessSpeed = speed - speedLimit; //calculates the excess speed passed the 70km/s mark
+      const demeritPoints = Math.floor(excessSpeed / kmPerDemeritPoints);// calculates the total number of demerit points to be given
+
+      if (demeritPoints >= 12) {
+        alert("License suspended");
+        console.log("License suspended"); //returns the value Licence suspended if the demerit points excceed 12 points
+      } else { 
+        alert(`Demerit points: ${demeritPoints}`);
+        console.log(`Demerit points: ${demeritPoints}`);
+      }
+    }
   }
+
+
+
      </script>
 
 </body>
