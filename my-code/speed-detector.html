@@ -7,14 +7,29 @@
 </head>
 <body>
     <script>
-let speed = '80 km/hr'
-
-
-
-
-    </script>
-
-
+let speed= prompt('Please enter the car speed');
+  let speedLimit = 70;
+  let kmPerDemeritPoints = 5;
+  let excessSpeed = speed -speedLimit 
+  let demeritPoints = math.floor(excessSpeed/kmPerDemeritPoints)
+ 
+  if  (speed <= 70){
+      alert("OK");
+    
+    }else ( speed >= 71){
+      alert("demeritPoints ");
+      
+   }
+   
+    if (demeritPoints >= 12) {
+      alert("License suspended");
+     
+   }
+   
+   else {
+      alert("invalid input") 
+  }
+     </script>
 
 </body>
 </html>
