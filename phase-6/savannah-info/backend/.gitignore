@@ -1,0 +1,5 @@
+venv/
+myproject/keys.py
+
+customers_orders/utils.py
+.env
